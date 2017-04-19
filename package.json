@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "bugs": {
+    "url": "https://github.com/rzachariah/hello-phoenix/issues"
+  },
+  "homepage": "https://github.com/rzachariah/hello-phoenix#readme",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js"
   }
 }

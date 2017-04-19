@@ -1,11 +1,12 @@
-FROM node:latest
+FROM node
 
+ENV PORT 80
 EXPOSE 80
+WORKDIR /app
 
-RUN mkdir /usr/hello-phoenix
-ADD . /usr/hello-phoenix
-WORKDIR /usr/hello-phoenix
-
+ADD package.json /app/
 RUN npm install
 
-ENTRYPOINT [ "node", "main.js" ]
+COPY . /app
+
+CMD npm start
